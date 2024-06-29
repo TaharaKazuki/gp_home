@@ -1,8 +1,8 @@
 {
   "extends": ["next/core-web-vitals", "plugin:tailwindcss/recommended"],
-  "plugins": ["unused-imports"],
+  "plugins": ["unused-imports", "import"],
   "rules": {
-    "no-unused-vars": "off", // "@typescript-eslint/no-unused-vars": "off" を使用する場合はこれを変更
+    "no-unused-vars": "off",
     "unused-imports/no-unused-imports": "error",
     "unused-imports/no-unused-vars": [
       "warn",
@@ -11,6 +11,20 @@
         "varsIgnorePattern": "^_",
         "args": "after-used",
         "argsIgnorePattern": "^_"
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          ["builtin", "external"],
+          ["internal", "parent", "sibling", "index"]
+        ],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
       }
     ]
   }

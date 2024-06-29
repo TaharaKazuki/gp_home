@@ -1,5 +1,5 @@
-import type { Metadata } from 'next';
 import clsx from 'clsx';
+import type { Metadata } from 'next';
 import { Marcellus, Montserrat, Noto_Sans_JP } from 'next/font/google';
 import './globals.css';
 
@@ -21,7 +21,7 @@ const notoSansJP = Noto_Sans_JP({
   variable: '--font-noto-sans-jp',
 });
 
-const metadata: Metadata = {
+export const metadata: Metadata = {
   title: 'GP_Home',
   description: 'GP_Home Web site',
 };
