@@ -23,9 +23,22 @@ const config = {
     fontFamily: {
       primary: 'var(--font-marcellus)',
       secondary: 'var(--font-montserrat)',
-      sans: ['Noto Sans JP', 'var(--font-noto-sans-jp)'],
+      sans: ['var(--font-noto-sans-jp)'],
     },
     extend: {
+      colors: {
+        primary: {
+          DEFAULT: '#473936',
+        },
+        secondary: {
+          DEFAULT: '#f2dfce',
+          100: '#cea39c',
+        },
+        accent: {
+          DEFAULT: '#f19687',
+          100: '#f2d5c5',
+        },
+      },
       keyframes: {
         'accordion-down': {
           from: { height: '0' },

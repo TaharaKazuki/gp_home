@@ -15,12 +15,13 @@ const montserrat = Montserrat({
   variable: '--font-montserrat',
 });
 
+// 最後、色々フォントを見て調整するので残しておく
 const notoSansJP = Noto_Sans_JP({
   subsets: ['latin'],
   variable: '--font-noto-sans-jp',
 });
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: 'GP_Home',
   description: 'GP_Home Web site',
 };
@@ -37,7 +38,6 @@ export default function RootLayout({
           marcellus.variable,
           montserrat.variable,
           notoSansJP.variable,
-          'font-sans',
           'overflow-x-hidden'
         )}
       >

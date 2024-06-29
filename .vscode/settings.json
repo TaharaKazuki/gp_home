@@ -7,7 +7,7 @@
     "source.fixAll.eslint"
   ],
   "editor.quickSuggestions": {
-    "strings": true
+    "strings": "on"
   },
   "cSpell.words": ["clsx", "noto", "Pinterest", "tailwindcss"],
   "tailwindCSS.experimental.classRegex": [
