@@ -21,16 +21,3 @@ export const customUtilities = (plugin: PluginAPI) => {
 
   addUtilities(utilities);
 };
-
-export const customUtilities2 = (plugin: PluginAPI) => {
-  const { addUtilities } = plugin;
-
-  addUtilities({
-    '.custom-box': {
-      boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)',
-    },
-    '.custom-fuga': {
-      fontSize: '10rem',
-    },
-  });
-};
