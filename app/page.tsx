@@ -3,8 +3,7 @@ import React from 'react';
 const Home = () => {
   return (
     <div>
-      <div>Home</div>
-      <button className="btn">aaa</button>
+      <button className="primary-btn">Button</button>
     </div>
   );
 };

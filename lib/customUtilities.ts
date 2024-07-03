@@ -16,7 +16,7 @@ export const customUtilities = (plugin: PluginAPI) => {
     : 'sans-serif';
 
   const utilities: { [key: string]: CSSRulesType } = {
-    '.btn': {
+    '.primary-btn': {
       backgroundColor: accentColor || '#f19687',
       minWidth: '178px',
       borderTopLeftRadius: '30px',
@@ -33,19 +33,7 @@ export const customUtilities = (plugin: PluginAPI) => {
       alignItems: 'center',
       justifyContent: 'center',
       color: '#fff',
-    },
-    '.input': {
-      height: '120px',
-      backgroundColor: '#fff',
-      borderRadius: '9999px',
-      paddingRight: '1.5rem',
-      paddingLeft: '1.5rem',
-    },
-    '.textArea': {
-      height: '120px',
-      borderRadius: '20px',
-      padding: '1rem 1.5rem',
-      resize: 'none',
+      animationTimeline: 'view()',
     },
   };
   addUtilities(utilities);

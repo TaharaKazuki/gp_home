@@ -3,7 +3,12 @@
   "plugins": ["unused-imports", "import", "tailwindcss"],
   "rules": {
     "no-unused-vars": "off",
-    "tailwindcss/no-custom-classname": "off",
+    "tailwindcss/no-custom-classname": [
+      2,
+      {
+        "allowedCustomClasses": ["primary-btn"]
+      }
+    ],
     "unused-imports/no-unused-imports": "error",
     "unused-imports/no-unused-vars": [
       "warn",
