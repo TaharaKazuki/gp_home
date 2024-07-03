@@ -13,7 +13,7 @@ export const customUtilities = (plugin: PluginAPI) => {
     ? fontFamilyPrimary.join(', ')
     : typeof fontFamilyPrimary === 'string'
     ? fontFamilyPrimary
-    : 'YourFontFamily';
+    : 'sans-serif';
 
   const utilities: { [key: string]: CSSRulesType } = {
     '.btn': {
