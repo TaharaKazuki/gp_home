@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 const Home = () => {
   return (
     <div>
-      <div className="custom-box-shadow"></div>
+      <div>Home</div>
     </div>
   );
 };
