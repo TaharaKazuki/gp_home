@@ -2,8 +2,8 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <div>
-      <button className="primary-btn">Button</button>
+    <div className="p-16">
+      <input type="text" className="input" />
     </div>
   );
 };

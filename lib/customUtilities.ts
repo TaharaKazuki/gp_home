@@ -33,7 +33,12 @@ export const customUtilities = (plugin: PluginAPI) => {
       alignItems: 'center',
       justifyContent: 'center',
       color: '#fff',
-      animationTimeline: 'view()',
+    },
+    '.input': {
+      height: '54px',
+      backgroundColor: '#fff',
+      borderRadius: '9999px',
+      padding: '0 1.5rem',
     },
   };
   addUtilities(utilities);
