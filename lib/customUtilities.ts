@@ -45,9 +45,14 @@ export const customUtilities = (plugin: PluginAPI) => {
       borderRadius: '9999px',
       padding: '0 1.5rem',
     },
-    textarea: {
+    '.textarea': {
       height: '120px',
       backgroundColor: COLORS.WHITE,
+      borderRadius: '20px',
+      paddingTop: '1rem',
+      paddingLeft: '1.5rem',
+      paddingRight: '1.5rem',
+      resize: 'none',
     },
   };
   addUtilities(utilities);
