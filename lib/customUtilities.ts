@@ -3,6 +3,11 @@ import { PluginAPI, CSSRuleObject } from 'tailwindcss/types/config';
 
 type CSSRulesType = CSSRuleObject & Properties;
 
+const COLORS = {
+  ACCENT: '#f19687',
+  WHITE: '#fff',
+};
+
 export const customUtilities = (plugin: PluginAPI) => {
   const { addUtilities, theme } = plugin;
 
@@ -16,8 +21,8 @@ export const customUtilities = (plugin: PluginAPI) => {
     : 'sans-serif';
 
   const utilities: { [key: string]: CSSRulesType } = {
-    '.primary-btn': {
-      backgroundColor: accentColor || '#f19687',
+    '.btn': {
+      backgroundColor: accentColor || COLORS.ACCENT,
       minWidth: '178px',
       borderTopLeftRadius: '30px',
       borderBottomLeftRadius: '30px',
@@ -32,13 +37,17 @@ export const customUtilities = (plugin: PluginAPI) => {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      color: '#fff',
+      color: COLORS.WHITE,
     },
     '.input': {
       height: '54px',
-      backgroundColor: '#fff',
+      backgroundColor: COLORS.WHITE,
       borderRadius: '9999px',
       padding: '0 1.5rem',
+    },
+    textarea: {
+      height: '120px',
+      backgroundColor: COLORS.WHITE,
     },
   };
   addUtilities(utilities);
