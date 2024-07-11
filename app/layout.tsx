@@ -1,6 +1,9 @@
 import clsx from 'clsx';
 import type { Metadata } from 'next';
 import { Marcellus, Montserrat, Noto_Sans_JP } from 'next/font/google';
+
+import CursorProvider from './provider/CursorContext';
+import Header from '@/components/Header';
 import './globals.css';
 
 const marcellus = Marcellus({
@@ -41,7 +44,10 @@ export default function RootLayout({
           'overflow-x-hidden'
         )}
       >
-        {children}
+        <CursorProvider>
+          <Header />
+          {children}
+        </CursorProvider>
       </body>
     </html>
   );
