@@ -1,9 +1,14 @@
 'use client';
-import { useMotionValue, useSpring, motion } from 'framer-motion';
-import { useState, createContext, useEffect, type ReactNode } from 'react';
+import { motion, useMotionValue, useSpring } from 'framer-motion';
+import React, {
+  useState,
+  useEffect,
+  createContext,
+  type ReactNode,
+} from 'react';
 import { useMediaQuery } from 'react-responsive';
 
-// context
+// create context
 export const CursorContext = createContext({});
 
 type CursorProviderProps = {
@@ -53,19 +58,24 @@ const CursorProvider = ({ children }: CursorProviderProps) => {
   return (
     <CursorContext.Provider value={{ mouseEnterHandler, mouseLeaveHandler }}>
       <motion.div
-        className="pointer-events-none fixed z-[99] rounded-full transition-all duration-300"
+        className="sakura"
         style={{
           left: springX,
           top: springY,
           width: cursor.size,
           height: cursor.size,
-          backgroundColor: cursor.background,
           mixBlendMode: isHovering ? 'difference' : 'normal',
           transition: 'width 0.2s ease-in-out, height 0.2s ease-in-out',
         }}
       >
-        {children}
+        <div className="petal petal01"></div>
+        <div className="petal petal02"></div>
+        <div className="petal petal03"></div>
+        <div className="petal petal04"></div>
+        <div className="petal petal05"></div>
+        <div className="petal petal06"></div>
       </motion.div>
+      {children}
     </CursorContext.Provider>
   );
 };
