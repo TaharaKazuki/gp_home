@@ -8,8 +8,18 @@ import React, {
 } from 'react';
 import { useMediaQuery } from 'react-responsive';
 
+type CursorContextType = {
+  mouseEnterHandler: () => void;
+  mouseLeaveHandler: () => void;
+};
+
+const defaultContext: CursorContextType = {
+  mouseEnterHandler: () => {},
+  mouseLeaveHandler: () => {},
+};
+
 // create context
-export const CursorContext = createContext({});
+export const CursorContext = createContext<CursorContextType>(defaultContext);
 
 type CursorProviderProps = {
   children: ReactNode;
