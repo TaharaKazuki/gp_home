@@ -58,23 +58,17 @@ const CursorProvider = ({ children }: CursorProviderProps) => {
   return (
     <CursorContext.Provider value={{ mouseEnterHandler, mouseLeaveHandler }}>
       <motion.div
-        className="sakura"
+        className="pointer-events-none fixed z-[99] rounded-full transition-all duration-300"
         style={{
           left: springX,
           top: springY,
           width: cursor.size,
           height: cursor.size,
+          backgroundColor: cursor.background,
           mixBlendMode: isHovering ? 'difference' : 'normal',
           transition: 'width 0.2s ease-in-out, height 0.2s ease-in-out',
         }}
-      >
-        <div className="petal petal01"></div>
-        <div className="petal petal02"></div>
-        <div className="petal petal03"></div>
-        <div className="petal petal04"></div>
-        <div className="petal petal05"></div>
-        <div className="petal petal06"></div>
-      </motion.div>
+      />
       {children}
     </CursorContext.Provider>
   );

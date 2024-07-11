@@ -39,39 +39,39 @@
   @apply outline-none ring-1 ring-accent/80 focus:ring-1 focus:ring-accent font-primary text-sm uppercase placeholder:text-primary text-primary;
 }
 
-@layer components {
-  .sakura {
-    @apply relative w-[25px] h-[25px] bg-transparent;
+/* @layer components {
+  .ixia {
+    @apply relative w-[20px] h-[20px] bg-transparent;
   }
 
-  .sakura .petal {
-    @apply absolute w-[12px] h-[20px] bg-[#FBA5D1] rounded-full;
+  .ixia .petal {
+    @apply absolute w-[10px] h-[16px] bg-[#FBA5D1] rounded-full;
     top: 0;
     left: 0;
     transform-origin: center bottom;
   }
 
-  .sakura .petal01 {
+  .ixia .petal01 {
     @apply rotate-0;
   }
 
-  .sakura .petal02 {
+  .ixia .petal02 {
     transform: rotate(60deg);
   }
 
-  .sakura .petal03 {
+  .ixia .petal03 {
     transform: rotate(120deg);
   }
 
-  .sakura .petal04 {
+  .ixia .petal04 {
     transform: rotate(180deg);
   }
 
-  .sakura .petal05 {
+  .ixia .petal05 {
     transform: rotate(240deg);
   }
 
-  .sakura .petal06 {
+  .ixia .petal06 {
     transform: rotate(300deg);
   }
-}
+} */
