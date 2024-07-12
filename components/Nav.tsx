@@ -3,10 +3,10 @@ import { usePathname } from 'next/navigation';
 import React from 'react';
 
 const LINKS = [
-  { href: '/', name: 'Home' },
-  { href: '/about', name: 'About' },
-  { href: '/treatments', name: 'Treatments' },
-  { href: '/contact', name: 'Contact' },
+  { href: '/', name: 'Home', subText: 'ホーム' },
+  { href: '/about', name: 'About', subText: '私たちについて' },
+  { href: '/treatments', name: 'Treatments', subText: 'サンプル' },
+  { href: '/contact', name: 'Contact', subText: 'コンタクト' },
 ];
 
 const Nav = () => {
@@ -14,7 +14,7 @@ const Nav = () => {
 
   return (
     <nav>
-      <div className="container mx-auto flex gap-8">
+      <div className="container mx-auto flex gap-8 text-center uppercase">
         {LINKS.map((link, i) => (
           <Link
             href={link.href}
@@ -24,6 +24,7 @@ const Nav = () => {
             }`}
           >
             {link.name}
+            <div className="text-[9px]">{link.subText}</div>
           </Link>
         ))}
       </div>
