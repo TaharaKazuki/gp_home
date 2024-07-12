@@ -3,8 +3,9 @@ import type { Metadata } from 'next';
 import { Marcellus, Montserrat, Noto_Sans_JP } from 'next/font/google';
 
 import CursorProvider from '../provider/CursorContext';
-import Header from '@/components/Header';
 import './globals.css';
+import Header from '@/components/Header';
+import PageTransition from '@/components/PageTransition';
 import Transition from '@/components/Transition';
 
 const marcellus = Marcellus({
@@ -48,7 +49,7 @@ export default function RootLayout({
         <CursorProvider>
           <Transition />
           <Header />
-          {children}
+          <PageTransition>{children}</PageTransition>
         </CursorProvider>
       </body>
     </html>

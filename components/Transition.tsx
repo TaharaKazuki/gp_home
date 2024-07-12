@@ -29,9 +29,9 @@ const Transition = () => {
               animate="animate"
               exit="exit"
               transition={{
-                duration: 0.4,
+                duration: 0.6,
                 ease: 'easeInOut',
-                delay: 0.4,
+                delay: 0.2,
               }}
               className="relative size-full bg-[#e2cfbd]"
             />
