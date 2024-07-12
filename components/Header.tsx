@@ -14,9 +14,7 @@ const Header = () => {
 
   return (
     <header className="fixed z-40 w-full bg-accent-100 pb-6 xl:bg-transparent xl:pb-[50px]">
-      <div className="mb-6 bg-secondary-100 py-4 xl:mb-[50px] xl:h-[50px] xl:py-8">
-        topbar
-      </div>
+      <div className="mb-6 bg-secondary-100 py-4 xl:mb-[50px] xl:h-[50px] xl:py-8"></div>
       <div className="container mx-auto flex items-center justify-between px-6">
         <div>
           <Link href="">
