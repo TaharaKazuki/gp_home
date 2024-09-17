@@ -29,8 +29,8 @@ const Home = () => {
               />
             </div>
           </div>
-          <div className="w-full pt-[120px] text-center xl:w-[500px] xl:text-left">
-            <div className="bottom-36 flex xl:hidden justify-center">
+          <div className="w-full text-center xl:w-[500px] xl:text-left">
+            <motion.div className="bottom-36 flex xl:hidden justify-center">
               <Image
                 src={'/assets/home/img.png'}
                 width={650}
@@ -38,7 +38,7 @@ const Home = () => {
                 quality={100}
                 alt=""
               />
-            </div>
+            </motion.div>
 
             <motion.p
               onMouseEnter={mouseEnterHandler}
