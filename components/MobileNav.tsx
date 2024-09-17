@@ -5,6 +5,7 @@ import { IoCloseOutline } from 'react-icons/io5';
 
 import Socials from './Socials';
 import { LINKS } from '@/constant';
+import { cn } from '@/lib/utils';
 
 type MobileNavProps = {
   setMobileNav: (_arg: boolean) => void;
@@ -24,17 +25,19 @@ const MobileNav = ({ setMobileNav }: MobileNavProps) => {
       <ul className="flex flex-col gap-10 text-xl text-white">
         {LINKS.map((link, i) => (
           <Link
+            onClick={() => setMobileNav(false)}
             href={link.href}
             key={i}
-            className={`${
-              pathname === link.href && 'border-b-2 border-accent'
-            } mx-auto max-w-max uppercase`}
+            className={cn(
+              pathname === link.href && 'border-b-2 border-accent',
+              'mx-auto max-w-max uppercase'
+            )}
           >
             {link.name}
           </Link>
         ))}
       </ul>
-      <Socials containerStyles="text-white text-lg flex gap-6 justify-center" />
+      <Socials containerStyles="text-white text-xl flex gap-6 justify-center" />
     </nav>
   );
 };

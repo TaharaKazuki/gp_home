@@ -39,6 +39,10 @@ const Header = () => {
         <motion.div
           initial={{ right: '-100%' }}
           animate={{ right: mobileNav ? 0 : '-100%' }}
+          transition={{
+            duration: 0.5,
+            ease: 'easeInOut',
+          }}
           className="fixed inset-y-0 right-0 z-50 w-[300px] bg-primary xl:hidden"
         >
           <MobileNav setMobileNav={setMobileNav} />
