@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <header className="fixed z-40 w-full bg-accent-100 pb-6 xl:bg-transparent xl:pb-[50px]">
-      <div className="mb-6 bg-secondary-100 py-4 xl:mb-[50px] xl:h-[50px] xl:py-8">
+      <div className="mb-6 bg-accent py-4 xl:mb-[50px] xl:h-[50px] xl:py-8">
         <div className="container mx-auto h-full">
           <div className="flex h-full items-center justify-between">
             <motion.div

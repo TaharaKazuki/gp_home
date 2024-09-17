@@ -30,6 +30,16 @@ const Home = () => {
             </div>
           </div>
           <div className="w-full pt-[120px] text-center xl:w-[500px] xl:text-left">
+            <div className="bottom-36 flex xl:hidden justify-center">
+              <Image
+                src={'/assets/home/img.png'}
+                width={650}
+                height={300}
+                quality={100}
+                alt=""
+              />
+            </div>
+
             <motion.p
               onMouseEnter={mouseEnterHandler}
               onMouseLeave={mouseLeaveHandler}
