@@ -19,18 +19,38 @@ const Home = () => {
       <div className="container mx-auto">
         <div className="flex h-full flex-col items-center xl:flex-row">
           <div className="flex-1">
-            <div className="fixed bottom-36 hidden xl:flex">
-              <Image
-                src={'/assets/home/img.png'}
-                width={650}
-                height={300}
-                quality={100}
-                alt=""
-              />
-            </div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{
+                opacity: 1,
+                bottom: 0,
+                transition: { delay: 2.4, duration: 1.2, ease: 'easeInOut' },
+              }}
+              onMouseEnter={mouseEnterHandler}
+              onMouseLeave={mouseLeaveHandler}
+              className="hidden xl:flex fixed bottom-0"
+            >
+              <div className="fixed bottom-36 hidden xl:flex">
+                <Image
+                  src={'/assets/home/img.png'}
+                  width={650}
+                  height={300}
+                  quality={100}
+                  alt=""
+                />
+              </div>
+            </motion.div>
           </div>
           <div className="w-full text-center xl:w-[500px] xl:text-left">
-            <motion.div className="bottom-36 flex xl:hidden justify-center">
+            <motion.div
+              className="bottom-36 flex xl:hidden justify-center"
+              initial={{ opacity: 0 }}
+              animate={{
+                opacity: 1,
+                bottom: 0,
+                transition: { delay: 2.4, duration: 1.2, ease: 'easeInOut' },
+              }}
+            >
               <Image
                 src={'/assets/home/img.png'}
                 width={650}
