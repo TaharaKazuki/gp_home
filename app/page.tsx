@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useContext } from 'react';
 
+import ModalVideo from '@/components/ModalVideo';
 import { CursorContext } from '@/provider/CursorContext';
 
 const Home = () => {
@@ -17,21 +18,24 @@ const Home = () => {
     >
       <div className="container mx-auto">
         <div className="flex h-full flex-col items-center xl:flex-row">
+          <div className="flex-1">
+            <div className="fixed bottom-36 hidden xl:flex">
+              <Image
+                src={'/assets/home/img.png'}
+                width={650}
+                height={300}
+                quality={100}
+                alt=""
+              />
+            </div>
+          </div>
           <div className="w-full pt-[120px] text-center xl:w-[500px] xl:text-left">
-            {/* ここにロゴ */}
-            {/* <motion.h1
-              onMouseEnter={mouseEnterHandler}
-              onMouseLeave={mouseLeaveHandler}
-              className="h2 mb-6"
-            >
-              グループホーム <br /> わおんイキシア
-            </motion.h1> */}
             <motion.p
               onMouseEnter={mouseEnterHandler}
               onMouseLeave={mouseLeaveHandler}
               className="lead mx-auto max-w-xl"
             >
-              わおんイキシアは保護犬・猫とともに暮らす
+              私たち、わおんイキシアは保護犬・猫とともに暮らす
               <br />
               障がい者グループホームです。
             </motion.p>
@@ -46,18 +50,9 @@ const Home = () => {
               <motion.div
                 onMouseEnter={mouseEnterHandler}
                 onMouseLeave={mouseLeaveHandler}
-              ></motion.div>
-            </div>
-          </div>
-          <div className="flex-1">
-            <div className="fixed bottom-0 hidden xl:flex">
-              <Image
-                src={'/assets/home/img.png'}
-                width={864}
-                height={650}
-                quality={100}
-                alt=""
-              />
+              >
+                <ModalVideo />
+              </motion.div>
             </div>
           </div>
         </div>
