@@ -22,6 +22,8 @@ const Header = () => {
               src="assets/logo.svg"
               width={120}
               height={44}
+              // fill
+              className="object-cover"
               priority
               alt=""
             />

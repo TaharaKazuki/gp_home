@@ -14,7 +14,7 @@ const Nav = () => {
 
   return (
     <nav>
-      <div className="container mx-auto flex gap-8 text-center uppercase">
+      <div className="container mx-auto flex gap-8 text-center capitalize">
         {LINKS.map((link, i) => (
           <Link
             href={link.href}
