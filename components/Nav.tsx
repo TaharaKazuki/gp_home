@@ -1,13 +1,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import React from 'react';
 
-const LINKS = [
-  { href: '/', name: 'Home', subText: 'ホーム' },
-  { href: '/about', name: 'About', subText: '私たちについて' },
-  { href: '/treatments', name: 'Treatments', subText: 'サンプル' },
-  { href: '/contact', name: 'Contact', subText: 'コンタクト' },
-];
+import { LINKS } from '@/constant';
 
 const Nav = () => {
   const pathname = usePathname();

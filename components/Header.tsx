@@ -17,12 +17,11 @@ const Header = () => {
       <div className="mb-6 bg-secondary-100 py-4 xl:mb-[50px] xl:h-[50px] xl:py-8"></div>
       <div className="container mx-auto flex items-center justify-between px-6">
         <div>
-          <Link href="">
+          <Link href="/">
             <Image
               src="assets/logo.svg"
               width={120}
               height={44}
-              // fill
               className="object-cover"
               priority
               alt=""
