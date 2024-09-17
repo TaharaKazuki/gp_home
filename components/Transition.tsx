@@ -33,7 +33,7 @@ const Transition = () => {
                 ease: 'easeInOut',
                 delay: 0.2,
               }}
-              className="relative size-full bg-[#e2cfbd]"
+              className="relative size-full bg-blue-200"
             />
           </div>
         </div>
