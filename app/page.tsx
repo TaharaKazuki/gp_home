@@ -16,7 +16,7 @@ const Home = () => {
       animate={{ opacity: 1, transition: { delay: 2 } }}
       className="flex min-h-screen items-center overflow-x-hidden"
     >
-      <div className="container mx-auto">
+      <div className="xs:mt-0 container mx-auto mt-32">
         <div className="flex h-full flex-col items-center xl:flex-row">
           <div className="flex-1">
             <motion.div
@@ -28,7 +28,7 @@ const Home = () => {
               }}
               onMouseEnter={mouseEnterHandler}
               onMouseLeave={mouseLeaveHandler}
-              className="hidden xl:flex fixed bottom-0"
+              className="fixed bottom-0 hidden xl:flex"
             >
               <div className="fixed bottom-36 hidden xl:flex">
                 <Image
@@ -43,7 +43,7 @@ const Home = () => {
           </div>
           <div className="w-full text-center xl:w-[500px] xl:text-left">
             <motion.div
-              className="bottom-36 flex xl:hidden justify-center"
+              className="bottom-36 flex justify-center xl:hidden"
               initial={{ opacity: 0 }}
               animate={{
                 opacity: 1,
@@ -51,13 +51,14 @@ const Home = () => {
                 transition: { delay: 2.4, duration: 1.2, ease: 'easeInOut' },
               }}
             >
-              <Image
-                src={'/assets/home/img.png'}
-                width={650}
-                height={300}
-                quality={100}
-                alt=""
-              />
+              <div className="relative h-[300px] w-[400px]">
+                <Image
+                  src={'/assets/home/img.png'}
+                  className="object-cover"
+                  fill
+                  alt=""
+                />
+              </div>
             </motion.div>
 
             <motion.p
