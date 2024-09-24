@@ -42,11 +42,11 @@ const AboutPage = () => {
             className="relative mb-8 h-[423px] w-[304px] xl:mx-0 xl:h-[534px] xl:w-[384px]"
           >
             <Image
-              src="/assets/about/img.jpg"
+              src="/assets/about/img.png"
               fill
               quality={100}
               priority
-              alt=""
+              alt="sample image"
               className="object-contain"
             />
           </motion.div>
@@ -63,7 +63,7 @@ const AboutPage = () => {
             className="mx-auto flex flex-col items-start text-center xl:mx-0 xl:max-w-[650px] xl:text-left"
           >
             <h2 className="h2 mx-auto mb-6 max-w-[540px] xl:max-w-none">
-              私たちはサンプルサンプルサンプル
+              私たちはサンプル
             </h2>
             <p className="lead mx-auto max-w-[600px] xl:mx-0">
               現在、日本ではサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
