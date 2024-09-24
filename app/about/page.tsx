@@ -1,7 +1,10 @@
 'use client';
+
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-
+import { FaHeartbeat } from 'react-icons/fa';
+import { FaPeopleRobbery } from 'react-icons/fa6';
+import { RiMentalHealthFill } from 'react-icons/ri';
 const AboutPage = () => {
   return (
     <motion.section
@@ -29,6 +32,32 @@ const AboutPage = () => {
             <p className="lead mx-auto max-w-[600px] xl:mx-0">
               現在、日本ではサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
             </p>
+            {/* items */}
+            <div className="mx-auto xl:mx-0">
+              <h3 className="h4 mb-4 items-center text-accent">
+                動物介在活動のもらたす効果
+              </h3>
+              <div className="mx-auto mb-14 grid grid-cols-3 items-center gap-[30px] xl:mx-0">
+                <div className="flex flex-row items-center gap-2">
+                  <RiMentalHealthFill size={40} className="text-accent" />
+                  <p className="text-xs lg:text-base">心理的効果</p>
+                </div>
+
+                <div className="flex flex-row items-center gap-2">
+                  <FaHeartbeat size={40} className="text-accent" />
+                  <p className="text-xs lg:text-base">生理的効果</p>
+                </div>
+
+                <div className="flex flex-row items-center gap-2">
+                  <FaPeopleRobbery size={40} className="text-accent" />
+                  <p className="text-xs lg:text-base">社会的効果</p>
+                </div>
+              </div>
+            </div>
+
+            <button className="mx-auto btn xl:mx-0">
+              お問い合わせはコチラ
+            </button>
           </div>
         </div>
       </div>

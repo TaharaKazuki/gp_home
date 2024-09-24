@@ -65,7 +65,7 @@ const Home = () => {
                 onMouseLeave={mouseLeaveHandler}
                 className="btn"
               >
-                お問い合わせはこちら
+                お問い合わせはコチラ
               </motion.button>
               <motion.div
                 onMouseEnter={mouseEnterHandler}
