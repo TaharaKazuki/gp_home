@@ -33,7 +33,7 @@ const Transition = () => {
                 ease: 'easeInOut',
                 delay: 0.2,
               }}
-              className="relative size-full bg-blue-200"
+              className="relative size-full bg-accent"
             />
           </div>
         </div>
