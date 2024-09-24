@@ -1,8 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
-import Link from 'next/link';
 import React, { useContext, useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { FaPhoneAlt } from 'react-icons/fa';
@@ -52,21 +50,6 @@ const Header = () => {
       </div>
       <div className="container mx-auto flex items-center justify-between px-6">
         {/* logo */}
-        <motion.div
-          onMouseEnter={mouseEnterHandler}
-          onMouseLeave={mouseLeaveHandler}
-        >
-          <Link href="/">
-            <Image
-              src="assets/logo.svg"
-              width={120}
-              height={44}
-              className="object-cover"
-              priority
-              alt=""
-            />
-          </Link>
-        </motion.div>
         <div
           className="cursor-pointer xl:hidden"
           onClick={() => setMobileNav(true)}

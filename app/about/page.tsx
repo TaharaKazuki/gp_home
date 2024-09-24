@@ -18,7 +18,17 @@ const AboutPage = () => {
       animate={{ opacity: 1, transition: { delay: 2 } }}
       className="flex min-h-screen items-center overflow-x-hidden"
     >
-      <div className="container mx-auto flex items-center pb-12 pt-48 xl:pb-0 xl:pt-32">
+      <video
+        autoPlay
+        loop
+        muted
+        className="absolute left-0 top-0 size-full object-cover"
+      >
+        <source src="/assets/home/video.mp4" type="video/mp4" />
+        このブラウザではvideoタグがサポートされておりません。
+      </video>
+
+      <div className="container z-30 mx-auto flex items-center pb-12 pt-48 xl:pb-0 xl:pt-32">
         <div className="flex size-full flex-col items-center justify-between xl:flex-row">
           <motion.div
             onMouseEnter={mouseEnterHandler}
@@ -60,22 +70,22 @@ const AboutPage = () => {
             </p>
             {/* items */}
             <div className="mx-auto xl:mx-0">
-              <h3 className="h4 mb-4 items-center text-accent">
+              <h3 className="h4 mb-4 items-center text-white">
                 動物介在活動のもらたす効果
               </h3>
               <div className="mx-auto mb-14 grid grid-cols-3 items-center gap-[30px] xl:mx-0">
                 <div className="flex flex-row items-center gap-2">
-                  <RiMentalHealthFill size={40} className="text-accent" />
+                  <RiMentalHealthFill size={40} className="text-white" />
                   <p className="text-xs lg:text-base">心理的効果</p>
                 </div>
 
                 <div className="flex flex-row items-center gap-2">
-                  <FaHeartbeat size={40} className="text-accent" />
+                  <FaHeartbeat size={40} className="text-white" />
                   <p className="text-xs lg:text-base">生理的効果</p>
                 </div>
 
                 <div className="flex flex-row items-center gap-2">
-                  <FaPeopleRobbery size={40} className="text-accent" />
+                  <FaPeopleRobbery size={40} className="text-white" />
                   <p className="text-xs lg:text-base">社会的効果</p>
                 </div>
               </div>
