@@ -16,7 +16,7 @@ const Home = () => {
       animate={{ opacity: 1, transition: { delay: 2 } }}
       className="flex min-h-screen items-center overflow-x-hidden"
     >
-      <div className="xs:mt-0 container mx-auto mt-32">
+      <div className="container mx-auto mt-32 lg:mt-0">
         <div className="flex h-full flex-col items-center xl:flex-row">
           <div className="flex-1">
             <motion.div
@@ -28,16 +28,10 @@ const Home = () => {
               }}
               onMouseEnter={mouseEnterHandler}
               onMouseLeave={mouseLeaveHandler}
-              className="fixed bottom-0 hidden xl:flex"
+              className="hidden xl:flex"
             >
-              <div className="fixed bottom-36 hidden xl:flex">
-                <Image
-                  src={'/assets/home/img.png'}
-                  width={650}
-                  height={300}
-                  quality={100}
-                  alt=""
-                />
+              <div className="relative hidden h-[250px] w-[600px] object-cover xl:flex">
+                <Image src={'/assets/home/img.svg'} fill quality={100} alt="" />
               </div>
             </motion.div>
           </div>
@@ -51,13 +45,8 @@ const Home = () => {
                 transition: { delay: 2.4, duration: 1.2, ease: 'easeInOut' },
               }}
             >
-              <div className="relative h-[300px] w-[400px]">
-                <Image
-                  src={'/assets/home/img.png'}
-                  className="object-cover"
-                  fill
-                  alt=""
-                />
+              <div className="relative h-[300px] w-[400px] object-cover">
+                <Image src={'/assets/home/img.svg'} fill alt="" />
               </div>
             </motion.div>
 
