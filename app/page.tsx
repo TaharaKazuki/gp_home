@@ -16,7 +16,18 @@ const Home = () => {
       animate={{ opacity: 1, transition: { delay: 2 } }}
       className="flex min-h-screen items-center overflow-x-hidden"
     >
-      <div className="container mx-auto mt-32 lg:mt-0">
+      <div />
+      <video
+        autoPlay
+        loop
+        muted
+        className="absolute left-0 top-0 size-full object-cover"
+      >
+        <source src="/assets/home/video.mp4" type="video/mp4" />
+        このブラウザではvideoタグがサポートされておりません。
+      </video>
+
+      <div className="container z-30 mx-auto mt-32 lg:mt-0">
         <div className="flex h-full flex-col items-center xl:flex-row">
           <div className="flex-1">
             <motion.div
