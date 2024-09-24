@@ -2,10 +2,16 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useContext } from 'react';
 import { FaHeartbeat } from 'react-icons/fa';
 import { FaPeopleRobbery } from 'react-icons/fa6';
 import { RiMentalHealthFill } from 'react-icons/ri';
+
+import { CursorContext } from '@/provider/CursorContext';
+
 const AboutPage = () => {
+  const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -14,7 +20,17 @@ const AboutPage = () => {
     >
       <div className="container mx-auto flex items-center pb-12 pt-48 xl:pb-0 xl:pt-32">
         <div className="flex size-full flex-col items-center justify-between xl:flex-row">
-          <div className="relative mb-8 h-[423px] w-[304px] xl:mx-0 xl:h-[534px] xl:w-[384px]">
+          <motion.div
+            onMouseEnter={mouseEnterHandler}
+            onMouseLeave={mouseLeaveHandler}
+            initial={{ opacity: 0, x: -60 }}
+            animate={{
+              opacity: 1,
+              x: 0,
+              transition: { delay: 2, duration: 0.8, ease: 'easeInOut' },
+            }}
+            className="relative mb-8 h-[423px] w-[304px] xl:mx-0 xl:h-[534px] xl:w-[384px]"
+          >
             <Image
               src="/assets/about/img.jpg"
               fill
@@ -23,9 +39,19 @@ const AboutPage = () => {
               alt=""
               className="object-contain"
             />
-          </div>
+          </motion.div>
           {/* text */}
-          <div className="mx-auto flex flex-col items-start text-center xl:mx-0 xl:max-w-[650px] xl:text-left">
+          <motion.div
+            onMouseEnter={mouseEnterHandler}
+            onMouseLeave={mouseLeaveHandler}
+            initial={{ opacity: 0, x: 60 }}
+            animate={{
+              opacity: 1,
+              x: 0,
+              transition: { delay: 2.4, duration: 0.8, ease: 'easeInOut' },
+            }}
+            className="mx-auto flex flex-col items-start text-center xl:mx-0 xl:max-w-[650px] xl:text-left"
+          >
             <h2 className="h2 mx-auto mb-6 max-w-[540px] xl:max-w-none">
               私たちはサンプルサンプルサンプル
             </h2>
@@ -58,7 +84,7 @@ const AboutPage = () => {
             <button className="mx-auto btn xl:mx-0">
               お問い合わせはコチラ
             </button>
-          </div>
+          </motion.div>
         </div>
       </div>
     </motion.section>
