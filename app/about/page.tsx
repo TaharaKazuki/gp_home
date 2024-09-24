@@ -24,11 +24,10 @@ const AboutPage = () => {
           {/* text */}
           <div className="mx-auto flex flex-col items-start text-center xl:mx-0 xl:max-w-[650px] xl:text-left">
             <h2 className="h2 mx-auto mb-6 max-w-[540px] xl:max-w-none">
-              {`Committed to Your Skin's Health and Beauty`}
+              私たちはサンプルサンプルサンプル
             </h2>
             <p className="lead mx-auto max-w-[600px] xl:mx-0">
-              Tailored skincare solutions for a healthy complexion, offering
-              customized care for radiant skin
+              現在、日本ではサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
             </p>
           </div>
         </div>
