@@ -27,7 +27,22 @@ const TreatmentPage = () => {
 
       <div className="container z-30 mx-auto flex items-center pb-12 pt-48 xl:pb-0 xl:pt-32">
         <div className="flex size-full items-center justify-between">
-          <div>text</div>
+          <div className="mx-auto flex flex-col items-start text-center xl:max-w-[650px] xl:text-left">
+            <h2 className="h2 mx-auto mb-6 max-w-[540px] xl:max-w-none">
+              サンプルサンプルサンプルサンプル
+            </h2>
+            <p className="lead mx-auto max-w-[600px] xl:mx-0">
+              サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
+            </p>
+            {/* items */}
+            <div>
+              <div></div>
+            </div>
+            {/* btn */}
+            <button className="mx-auto btn xl:mx-0">
+              お問い合わせはコチラ
+            </button>
+          </div>
           <div className="relative hidden h-[534px] w-[384px] xl:flex">
             <Image
               src="/assets/treatments/img.jpg"

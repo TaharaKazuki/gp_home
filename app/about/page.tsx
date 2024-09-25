@@ -60,7 +60,7 @@ const AboutPage = () => {
               x: 0,
               transition: { delay: 2.4, duration: 0.8, ease: 'easeInOut' },
             }}
-            className="mx-auto flex flex-col items-start text-center xl:mx-0 xl:max-w-[700px] xl:text-left"
+            className="mx-auto flex flex-col items-start text-center xl:mx-0 xl:max-w-[650px] xl:text-left"
           >
             <h2 className="h2 mx-auto mb-6 max-w-[540px] xl:max-w-none">
               私たちはサンプル
