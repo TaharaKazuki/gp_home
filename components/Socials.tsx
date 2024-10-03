@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
 type SocialsProps = {
   containerStyles: string;
 };
@@ -7,15 +7,7 @@ type SocialsProps = {
 const SOCIALS = [
   {
     href: '/',
-    icon: <FaYoutube />,
-  },
-  {
-    href: '/',
     icon: <FaFacebook />,
-  },
-  {
-    href: '/',
-    icon: <FaTwitter />,
   },
   {
     href: '/',
